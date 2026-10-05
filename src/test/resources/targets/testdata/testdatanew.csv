@@ -1,0 +1,2 @@
+testcasename, firstname,lastname,totalprice,depositpaid,checkin,checkout,additionalneeds
+TC001,JimTest,Brown,111,true,2018-01-01,2019-01-01,Breakfast

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Automation Suite">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="filePath" value="/src/test/resources/targets/testdata/testdatanew.csv"></parameter>
+    <parameter name="csvPojo" value="csvpojo.PojoClass"></parameter>
+    <listeners>
+        <listener class-name="reporting.CustomReport"></listener>
+    </listeners>
+    <test name="Automation Context Test">
+        <classes>
+            <class name="tests.CreateTest"></class>
+        </classes>
+    </test>
+</suite>
