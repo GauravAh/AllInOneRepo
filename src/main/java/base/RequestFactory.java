@@ -10,6 +10,7 @@ public class RequestFactory {
     public static RequestSpecification getSpecification(){
 
         String tokenVal =  TokenManager.generateToken();
+        System.out.println("Token Value is.." + tokenVal);
         return RestAssured.given()
                 .baseUri(ConfigUtility.getProp("apiurl"))
                 .header("Accept", "application/json")
