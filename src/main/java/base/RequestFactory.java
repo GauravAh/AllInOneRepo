@@ -11,6 +11,7 @@ public class RequestFactory {
 
         String tokenVal =  TokenManager.generateToken();
         String tokenVal1 =  TokenManager.generateToken();
+        System.out.println(tokenVal1);
         return RestAssured.given()
                 .baseUri(ConfigUtility.getProp("apiurl"))
                 .header("Accept", "application/json")
