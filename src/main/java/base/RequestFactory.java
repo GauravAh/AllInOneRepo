@@ -10,7 +10,7 @@ public class RequestFactory {
     public static RequestSpecification getSpecification(){
 
         String tokenVal =  TokenManager.generateToken();
-        System.out.println(tokenVal1);
+        System.out.println(tokenVal);
         String tokenVal1 =  TokenManager.generateToken();
         System.out.println(tokenVal1);
         return RestAssured.given()
